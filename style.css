@@ -1,0 +1,36 @@
+.author {
+    text-align: right !important;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+
+/* 
+#output {
+    opacity: 0;
+    transition: opacity 230ms;
+    animation: opac;
+}
+
+#output:hover {
+    opacity: 1;
+} */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#output {
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 2s ease-out 0s 1 fadeIn;
+}
